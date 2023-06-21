@@ -1,0 +1,538 @@
+/* Poppins Yazı Tipi */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+    transition: all .2s ease;
+}
+/* Genel Elemanlar */
+html
+{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+body
+{
+    background-color: #e84242;
+    height: 200vh;
+}
+a
+{
+    color: #0e0e0e;
+    text-decoration: none;
+}
+.btn
+{
+    color: #fff;
+    background-color: #0e0e0e;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 20px 37.5px;
+    border-radius: 300px;
+    font-size: 17px;
+}
+.btn:hover
+{
+    opacity: 0.9;
+}
+
+.heading
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 35px;
+}
+.heading span
+{
+    text-transform: uppercase;
+    color: #0e0e0e;
+}
+/* Genel Elemanlar Sonu */
+
+.header
+{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 20px 7%;
+    border-radius: 300px;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,.75);
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo img
+{
+    height: 80px;
+}
+
+.header .menu
+{
+    list-style-type: none;
+    display: flex;
+}
+
+.header .menu li a
+{
+    margin: 0 10px;
+    font-size: 15px;
+    border-bottom: 1px solid transparent;
+}
+
+.header .menu li a:hover
+{
+    border-color: #e84242;
+    padding-bottom: 5px;
+}
+
+.header .icons button
+{
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+    background: transparent;
+}
+
+.home
+{
+    min-height: 100vh;
+    background-image: url("../images/home.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    margin-top: -145px;
+}
+
+.home .content
+{
+    padding: 35px 7%;
+    max-width: 800px;
+}
+
+.home .content h3
+{
+    font-size: 60px;
+    color: #fff;
+}
+
+.home .content p
+{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 10px 0;
+    color: #ccc;
+}
+
+/* menu Bölümü */
+.menu
+{
+    padding: 20px 7%;
+}
+
+.menu .boxContainer
+{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu .boxContainer .box
+{
+    width: 23.99%;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 600px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.menu .boxContainer .box .boxHead img
+{
+    width: 100%;
+}
+
+.menu .boxContainer .box .boxHead .menuCategory
+{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.menu .boxContainer .box .boxHead .menuTitle
+{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.menu .boxContainer .box .boxHead .price
+{
+    font-size: 25px;
+    padding: 5px 0;
+}
+
+.menu .boxContainer .box .boxHead .price span
+{
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+/* Products Bölümü */
+.products 
+{
+    padding: 0 7%;
+    margin-bottom: 30px;
+}
+
+.products .boxContainer
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.products .boxContainer .box
+{
+    width: 32.72%;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.products .boxContainer .box .boxHead
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.products .boxContainer .box .boxHead .productCategory
+{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.products .boxContainer .box .boxHead .productName
+{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.products .boxContainer .box .boxImage
+{
+    position: relative;
+}
+
+.products .boxContainer .box .boxImage img
+{
+    border-radius: 30px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.products .boxContainer .box .boxBottom
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products .boxContainer .box .boxBottom .productInfo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.products .boxContainer .box .boxBottom .productInfo .productPrice
+{
+    font-size: 30px;
+}
+
+/*Hatalı*/
+.products .boxContainer .box .boxBottom .productInfo .productAmount
+{
+    font-size: 18px;
+}
+
+.products .boxContainer .box .boxBottom .productAddToCart a 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border: 1.5px solid #e84242;
+}
+
+.products .boxContainer .box .boxBottom .productAddToCart a i
+{
+    font-size: 18px;
+    color: #e84242;
+}
+
+.products .boxContainer .darkProduct
+{
+    background: url('/images/dark-product.jpg');
+    background-size: 100%;
+    background-position-y: center;
+}
+
+.products .boxContainer .darkProduct .boxHead .productName, 
+.products .boxContainer .darkProduct .boxHead .productCategory,
+.products .boxContainer .darkProduct .boxBottom .productInfo
+{
+    color:#fff;
+}
+
+/* Products Bölümü Sonu */
+
+.aboutUs
+{
+    padding: 0 7%;
+    margin-bottom: 30px;
+}
+
+.aboutUs .aboutContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.aboutUs .aboutContainer .aboutImage,
+.aboutUs .aboutContainer .aboutContent
+{
+    flex: 1 1 500px;
+}
+
+.aboutUs .aboutContainer .aboutImage img
+{
+    width: 100%;
+}
+
+.aboutUs .aboutContainer .aboutContent h3
+{
+    font-size: 30px;
+    color: #fff;
+}
+
+.aboutUs .aboutContainer .aboutContent p
+{
+    font-size: 16px;
+    color: #ccc;
+    padding: 10px 0;
+    line-height: 1.8;
+}
+
+/* Customer Review*/
+.customerReview
+{
+    padding: 0 7%;
+    margin-bottom: 30px;
+}
+
+.customerReview .boxContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
+
+.customerReview .boxContainer .box
+{
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 30px;
+    width: 32.72%;
+}
+
+.customerReview .boxContainer .box p
+{
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 20px 0;
+}
+
+.customerReview .boxContainer .box .userImage
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.customerReview .boxContainer .box h3
+{
+    font-size: 20px;
+    color: #e84242;
+    padding: 10px 0;
+}
+
+.customerReview .boxContainer .box .starContainer i
+{
+    font-size: 15px;
+}
+
+/* Contact Us */
+.contactUs
+{
+    padding: 0 7%;
+    margin-bottom: 30px;
+}
+
+.contactUs .contactContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: #0e0e0e;
+}
+
+.contactUs .contactContainer iframe
+{
+    flex: 1 1 450px;
+    width: 100%;
+}
+
+.contactUs .contactContainer form
+{
+    flex: 1 1 450px;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+.contactUs .contactContainer form h3
+{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.contactUs .contactContainer form .inputBox
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border: 1px solid rgba(255,255,255,0.4);
+}
+.contactUs .contactContainer form .inputBox i
+{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.contactUs .contactContainer form .inputBox input
+{
+    width: 100%;
+    padding: 20px;
+    font-size: 17px;
+    background: none;
+    color: #fff;
+}
+
+.contactUs .contactContainer form .contactBtn
+{
+    color: #e84242;
+    background-color: #fff;
+    font-weight: bold;
+}
+/* Contact Us Bölüm Sonu */
+
+/* OurBlog Başlangıcı */
+.ourBlog
+{
+    padding: 0 7%;
+}
+
+.ourBlog .boxContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:15px;
+}
+
+.ourBlog .boxContainer .box
+{
+    background-color: #fff;
+    border-radius: 30px;
+    width: 32.72%;
+}
+
+.ourBlog .boxContainer .box .boxImage
+{
+    height: 250px;
+    overflow: hidden;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.ourBlog .boxContainer .box .boxImage img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.ourBlog .boxContainer .box .boxContent
+{
+    padding: 15px;
+}
+
+.ourBlog .boxContainer .box .boxContent .blogTitle
+{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.ourBlog .boxContainer .box .boxContent span
+{
+    display: block;
+    font-size: 15px;
+    opacity: .8;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.ourBlog .boxContainer .box .boxContent p
+{
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 10px 0;
+    color:#0e0e0e9a;
+}
+
+.ourBlog .boxContainer .box:hover .boxImage img
+{
+    transform:scale(1.2);
+}
